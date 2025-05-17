@@ -32,6 +32,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/")
+def read_root():
+    return {"message": "Backend is running."}
+
 class TextSummaryRequest(BaseModel):
     text: str
     method: str  # "abstractive" or "extractive"
