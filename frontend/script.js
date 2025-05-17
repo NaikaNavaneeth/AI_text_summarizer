@@ -2,7 +2,7 @@ async function summarize() {
     const text = document.getElementById("inputText").value;
     const method = document.getElementById("method").value;
   
-    const response = await fetch("http://localhost:8081/summarize-text", {
+    const response = await fetch("https://ai-text-summarizer-vwoo.onrender.com/summarize-text", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ text, method }),
@@ -16,7 +16,7 @@ async function summarize() {
     const context = document.getElementById("contextText").value;
     const question = document.getElementById("questionInput").value;
   
-    const response = await fetch("http://localhost:8081/ask-question", {
+    const response = await fetch("https://ai-text-summarizer-vwoo.onrender.com/ask-question", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ context, question }),
