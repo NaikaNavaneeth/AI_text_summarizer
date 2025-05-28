@@ -188,4 +188,4 @@ def extract_text_from_docx(docx_bytes):
         raise ValueError(f"Failed to extract text from DOCX: {str(e)}")
 
 # if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8085, reload=True)
+    #uvicorn.run(app, host="0.0.0.0", port=8085, reload=True)
