@@ -1,4 +1,4 @@
-const API_URL = 'https://ai-text-summarizer-vwoo.onrender.com';
+export const API_URL = process.env.VITE_BACKEND_URL || 'http://localhost:8085';
 
 import { saveAs } from 'file-saver';
 import { jsPDF } from 'jspdf';
